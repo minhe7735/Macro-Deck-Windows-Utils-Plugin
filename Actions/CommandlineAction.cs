@@ -40,6 +40,7 @@ namespace SuchByte.WindowsUtils.Actions
                             WorkingDirectory = workingDirectory,
                             Arguments = "/C " + command,
                             RedirectStandardOutput = saveVariable,
+                            CreateNoWindow = true,
                         }
                     };
                     p.Start();
